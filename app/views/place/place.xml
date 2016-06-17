@@ -1,0 +1,14 @@
+<Page loaded="loaded">
+<StackLayout orientation="vertical" style.backgroundColor="lightgray">
+<Label text="{{ name }}" width="*" height="80" backgroundColor="aqua"/>
+<Label text="{{'ocena: ' +score}}" width="*" height="80" backgroundColor="red"/>
+
+
+  <Repeater items="{{ comments }}">
+    <Repeater.itemTemplate>
+      <Label text="{{$value}}" width="*"  backgroundColor="gray"  textWrap="true"/>
+    </Repeater.itemTemplate>
+  </Repeater>
+</StackLayout>
+
+</Page>
