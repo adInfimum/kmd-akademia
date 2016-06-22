@@ -1,0 +1,58 @@
+ListView {
+    margin: 5;
+}
+Label {
+    margin: 10;
+    horizontal-align: left;
+    vertical-align: center;
+}
+TextField {
+    border-width: 5;
+    border-style: solid;
+    border-color: #034793;
+}
+
+.image{
+horizontAlignment: center;
+height: 50px;
+width: 50px;
+margin-left: -90px;
+margin-top: -50x;
+
+
+}
+
+
+.opinie{
+ height: *;
+}
+.imie{
+ height: 50px;   
+ margin-left: 120px;
+ margin-bottom: -45px;
+ padding:10px;
+ font-size: 15px;
+ color: black;
+    
+    
+}
+
+.zobacz{
+    margin-left: 134px;
+    margin-top: 20px;
+    font-size: 10px;
+   color: blue;
+   text-decoration: underline;
+}
+
+.historia{
+    color: red;
+     font-size: 18px;
+     margin-left: 90px;
+   
+}
+.opinie{
+     color: red;
+     font-size: 18px;
+     margin-left: 90px;
+}

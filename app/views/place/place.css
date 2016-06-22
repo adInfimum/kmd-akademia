@@ -1,0 +1,19 @@
+Page { 
+background-color: lightblue;
+ font-size: 17; 
+} 
+TextField { 
+margin: 10; 
+padding: 10;
+ }
+ Image { 
+height:200px;
+width: 500px;
+ margin-right: 0;
+ margin-bottom: 80;
+ } 
+Button {
+ margin: 10; 
+padding: 10;
+ color: red; 
+}

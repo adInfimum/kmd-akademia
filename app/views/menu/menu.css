@@ -1,0 +1,56 @@
+
+
+.image{
+height: 50px;
+width: 50px;
+margin-left: -310px;
+margin-top: -45x;
+
+
+}
+
+
+.opinie{
+ 
+ height: *;
+
+}
+.imie{
+ height: 50px;   
+ margin-left: 70px;
+ margin-bottom: -35px;
+ padding:10px;
+ font-size: 15px;
+ color: black;
+    
+    
+}
+
+.zobacz{
+    margin-left: 90px;
+    margin-top: 13px;
+    font-size: 10px;
+   color: blue;
+   text-decoration: underline;
+}
+
+.historia{
+    color: red;
+     font-size: 18px;
+     margin-left: 20px;
+   
+}
+.opinie{
+      color: red;
+     font-size: 18px;
+     margin-left: 20px;
+}
+.row{
+   text-transform: uppercase;
+   
+}
+
+.kreska{
+     height: 1px;
+     backgroundColor: black;
+}

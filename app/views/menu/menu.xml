@@ -1,0 +1,40 @@
+<Page>
+  
+  <StackLayout cssClass="top-border" orientation="vertical" style.backgroundColor="white">
+   
+  
+    <Label text=" Zdzisław " cssClass="imie"/>
+    <Label text=" Grodzki"  cssClass="imie"/>
+    
+    <Label text="Zobacz profil"  cssClass="zobacz"  />
+     
+    <Image src="~/images/logo.png" cssClass="image"  horizontAlignment="center" />
+    
+    <Label text="" cssClass="kreska"/>
+    
+    
+    
+    
+   
+    <Label text="HISTORIA:" cssClass="historia" />
+
+
+
+
+<Label text="" cssClass="kreska"/>
+    <Label text="Opinie:" cssClass="opinie" />
+
+    
+    <ListView.itemTemlate>
+      <GridLayout  row="*,*" cssClass="grid">
+        <Label row="0" col="1" text="{{ room }}" cssClass="row"/>
+        
+        
+      </GridLayout>
+    
+    </ListView.itemTemlate>   
+    
+    </StackLayout>
+
+
+</Page>

@@ -1,0 +1,34 @@
+<Page loaded="loaded">
+
+<AbsoluteLayout orientation="horizontal">
+
+<StackLayout orientation="vertical" width="300" id="menu" left="-300">
+
+
+      <Label text=" Zdzisław " cssClass="imie"  />
+      <Label text=" Grodzki"  cssClass="imie"   />
+
+      <Label text="Zobacz profil"  cssClass="zobacz"  />
+
+      <Image src="~/images/logo.png" cssClass="image"  />
+
+      <Label text="HISTORIA:" cssClass="historia" />
+
+            <Repeater items="{{ list }}">
+               <Repeater.itemTemplate>
+                     <Label text="{{'&#x2022;'+$value}}" textWrap="true"/>
+               </Repeater.itemTemplate>
+            </Repeater>
+
+      <Label text="Opinie:" cssClass="opinie" />
+      <Button text="zwiń" class="link" tap="signOut"/>
+</StackLayout>
+    
+<StackLayout>
+    <Button text="Menu" class="link" tap="signIn"   />
+    <Button text="Miejsce" class="link" tap="place" />
+</StackLayout>
+  
+</AbsoluteLayout>
+  
+</Page>
