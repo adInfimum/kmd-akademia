@@ -1,7 +1,7 @@
-<Page loaded="loaded" xmlns:maps="nativescript-google-maps-sdk">
+<Page loaded="loaded">
 
 <AbsoluteLayout orientation="horizontal">
-<maps:mapView  cssClass="map"/>
+
 <StackLayout orientation="vertical" width="300" id="menu" left="-300">
 
 
@@ -25,7 +25,6 @@
 </StackLayout>
     
 <StackLayout>
-    
     <Button text="Menu" class="link" tap="signIn"   />
     <Button text="Miejsce" class="link" tap="place" />
 </StackLayout>
