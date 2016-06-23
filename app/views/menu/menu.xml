@@ -3,25 +3,24 @@
   <StackLayout cssClass="top-border" orientation="vertical" style.backgroundColor="white">
    
   
-    <Label text=" Zdzisław " cssClass="imie"  height="50px"   />
-    <Label text=" Grodzki"  cssClass="imie"  height="50px"   />
+    <Label text=" Zdzisław " cssClass="imie"/>
+    <Label text=" Grodzki"  cssClass="imie"/>
     
     <Label text="Zobacz profil"  cssClass="zobacz"  />
      
     <Image src="~/images/logo.png" cssClass="image"  horizontAlignment="center" />
     
-    <Label text="" cssCalss="kreska" height="1px" style.backgroundColor="black"/>
+    <Label text="" cssClass="kreska"/>
     
     
     
     
-    <!--<Label text="Historia" cssClass="hisoria" width="*" height="200" style.backgroundColor="yellow" />-->
     <Label text="HISTORIA:" cssClass="historia" />
 
 
 
 
-<Label text="" xssClass="kreskaa" height="1px" style.backgroundColor="black"/>
+<Label text="" cssClass="kreska"/>
     <Label text="Opinie:" cssClass="opinie" />
 
     

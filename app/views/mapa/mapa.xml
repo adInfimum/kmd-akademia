@@ -1,45 +1,36 @@
-<Page loaded="loaded">
+<Page loaded="loaded" xmlns:maps="nativescript-google-maps-sdk">
 
   <AbsoluteLayout orientation="horizontal">
-
-    <StackLayout cssClass="top-border" orientation="vertical" style.backgroundColor="white" width="300" id="menu" left="-300">
-
-
-      <Label text=" Zdzisław " cssClass="imie"  height="50px"   />
-      <Label text=" Grodzki"  cssClass="imie"  height="50px"   />
-
-      <Label text="Zobacz profil"  cssClass="zobacz"  />
-
-      <Image src="~/images/logo.png" cssClass="image"  horizontAlignment="center" />
-
-      <Label text="" cssCalss="kreska" height="1px" style.backgroundColor="black"/>
+    <maps:mapView  cssClass="map"/>
+    <StackLayout orientation="horizontal" id="menuPanel" left="-300" >
+      <StackLayout orientation="vertical" width="300" cssClass="menu" id="menu">
 
 
+        <Label text=" Zdzisław " cssClass="imie"  />
+        <Label text=" Grodzki"  cssClass="imie"   />
 
+        <Label text="Zobacz profil"  cssClass="zobacz"  />
 
-      <!--<Label text="Historia" cssClass="hisoria" width="*" height="200" style.backgroundColor="yellow" />-->
-      <Label text="HISTORIA:" cssClass="historia" />
+        <Image src="~/images/logo.png" cssClass="image"  />
 
+        <Label text="HISTORIA:" cssClass="historia" />
 
+        <Repeater items="{{ list }}">
+          <Repeater.itemTemplate>
+            <Label text="{{'&#x2022;'+$value}}" textWrap="true"/>
+          </Repeater.itemTemplate>
+        </Repeater>
 
-
-      <Label text="" xssClass="kreskaa" height="1px" style.backgroundColor="black"/>
-      <Label text="Opinie:" cssClass="opinie" />
-
-
-      <ListView.itemTemlate>
-        <GridLayout  row="*,*" cssClass="grid">
-          <Label row="0" col="1" text="{{ room }}" cssClass="row"/>
-
-
-        </GridLayout>
-
-      </ListView.itemTemlate>
-
+        <Label text="Opinie:" cssClass="opinie" />
+       
+      </StackLayout>
+      <Button text="&gt;&gt;" class="link" tap="toggleMenu" width="30" id="guzik" />
     </StackLayout>
     <StackLayout>
-    <Button text="Menu" class="link" tap="signIn" />
-    <Button text="Miejsce" class="link" tap="place" />
-</StackLayout>
+
+      <Button text="Miejsce" class="link" tap="place" />
+    </StackLayout>
+
   </AbsoluteLayout>
+
 </Page>

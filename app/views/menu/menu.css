@@ -1,8 +1,8 @@
 
 
 .image{
-   height: 50px;
-width: 150px;
+height: 50px;
+width: 50px;
 margin-left: -310px;
 margin-top: -45x;
 
@@ -16,12 +16,12 @@ margin-top: -45x;
 
 }
 .imie{
-    
-    margin-left: 70px;
-    margin-bottom: -35px;
-   padding:10px;
-   font-size: 15px;
-   color: black;
+ height: 50px;   
+ margin-left: 70px;
+ margin-bottom: -35px;
+ padding:10px;
+ font-size: 15px;
+ color: black;
     
     
 }
@@ -48,4 +48,9 @@ margin-top: -45x;
 .row{
    text-transform: uppercase;
    
+}
+
+.kreska{
+     height: 1px;
+     backgroundColor: black;
 }
