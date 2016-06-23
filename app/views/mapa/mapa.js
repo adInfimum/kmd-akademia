@@ -1,6 +1,7 @@
 var frameModule = require("ui/frame");
 var dialogsModule = require("ui/dialogs");
 var page;
+var menuOpen = false;
 
 exports.loaded = function(args) {
     page = args.object;
@@ -12,18 +13,30 @@ exports.place = function (args) {
     frameModule.topmost().navigate("views/place/place");
 }
 
-exports.signIn = function ( ) {
+exports.toggleMenu = function ( ) {
     var menu = page.getViewById("menu");
-        menu.animate({
-        translate: { x: menu.style.width, y: 0 },
-        duration: 1000
-        });
+    var menuPanel = page.getViewById("menuPanel");
+    var guzik = page.getViewById("guzik");
+    var movex;
+
+    if (menuOpen) {
+        movex = 0;
+        guzik.text = ">>";
+    } else {
+        movex = menu.style.width;
+        guzik.text = "<<";
+    }
+    menuPanel.animate({
+         translate: { x: movex, y: 0 },
+         duration: 1000
+    });
+    menuOpen = !menuOpen;
 }
 
 exports.signOut = function () {
-    var menu = page.getViewById("menu");
+    var menu = page.getViewById("menuPanel");
     menu.animate({
-        translate: { x: -100 , y: 0 },
+        translate: { x: -50 , y: 0 },
         duration: 1000
         });
 }
