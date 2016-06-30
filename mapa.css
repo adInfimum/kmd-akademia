@@ -1,0 +1,88 @@
+ListView {
+    margin: 5;
+}
+Label {
+    margin: 10;
+    horizontal-align: left;
+    vertical-align: center;
+}
+TextField {
+    border-width: 5;
+    border-style: solid;
+    border-color: #034793;
+}
+
+.menu {
+    background-color: #FAFAD2;
+    height: 100%;
+}
+
+.image{
+horizontAlignment: center;
+height: 50px;
+width: 50px;
+margin-left: -100px;
+margin-top: -50x;
+
+
+}
+
+
+.opinie{
+ height: *;
+}
+
+.imie{
+ height: 50px;   
+ margin-left: 120px;
+ margin-bottom: -45px;
+ padding:10px;
+ font-size: 15px;
+ color: black;
+    
+    
+}
+
+.zobacz{
+    margin-left: 134px;
+    margin-top: 20px;
+    font-size: 10px;
+   color: blue;
+   text-decoration: underline;
+}
+
+.historia{
+      color: #008B8B;
+     font-size: 18px;
+     margin-left: 90px;
+     font-weight: bold;
+   
+}
+.opinie{
+     color: #008B8B;
+     font-size: 18px;
+     margin-left: 90px;
+     font-weight: bold;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.guzik {
+    color: red;
+    border-radius: 10px;
+}
+ .logoaplikacji  { 
+   height: 70px;
+    width: 70px;
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    border: 0;
+}
+
+ .logokmd {
+
+ }
